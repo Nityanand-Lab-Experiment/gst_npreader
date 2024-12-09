@@ -15,5 +15,5 @@ sudo make install
 
 ## Usage
 
-gst-launch-1.0 -e videotestsrc ! x264enc ! perf ! qtmux print-arm-load=true ! filesink location=test.mp4
+gst-launch-1.0 -e videotestsrc ! x264enc ! ixgnpreader ! qtmux print-arm-load=true ! filesink location=test.mp4
 
